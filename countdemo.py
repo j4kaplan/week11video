@@ -1,13 +1,13 @@
 import openpyxl
 
 def get_data_rows(file_name):
-    excel_file= openpyxl.load_workbook("games-features.xlsx")
+    excel_file= openpyxl.load_workbook("../quiz4/games-features.xlsx")
     main_worksheet = excel_file.active
     return main_worksheet.rows
 
 def count_data():
     row_count = 0
-    rows_to_count = get_data_rows("games-features.xlsx")
+    rows_to_count = get_data_rows("../quiz4/games-features.xlsx")
     for row_being_counted in rows_to_count:
         row_count +=1
 

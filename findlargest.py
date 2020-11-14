@@ -3,7 +3,7 @@ import openpyxl.utils
 from countdemo import get_data_rows
 
 def find_largest():
-    game_data_rows = get_data_rows("games-features.xlsx")
+    game_data_rows = get_data_rows("../quiz4/games-features.xlsx")
     largest_row = None
     for game_row in game_data_rows:
         if largest_row is None:
